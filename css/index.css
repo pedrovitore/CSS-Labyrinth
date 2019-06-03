@@ -1,0 +1,64 @@
+.titleCSS {
+    position: absolute;
+    font-family: "Teko", sans-serif;
+    display: flex;
+    flex-flow: row;
+    width: 320px;
+    top: 50px;
+    left: 200px;
+}
+.titleCSS p {
+    flex: 1;
+    font-size: 250px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 10px 10px 2px black,
+                2px 2px black,
+                2px -2px black,
+                -2px 2px black,
+                -2px -2px black;
+}
+#titleC {
+    color: #5F5;
+    animation: letter-effect 3s infinite;
+    animation-direction: normal;
+}
+#titleS1 {
+    color: #FF5;
+    animation: letter-effect 3s infinite;
+    animation-direction: normal;
+    animation-delay: 0.3s;
+}
+#titleS2 {
+    color: #55F;
+    animation: letter-effect 3s infinite;
+    animation-direction: normal;
+    animation-delay: 0.6s;
+}
+
+@keyframes letter-effect {
+    0% {
+        transform: scale(1);
+        text-shadow: 10px 10px 2px black,
+                    2px 2px black,
+                    2px -2px black,
+                    -2px 2px black,
+                    -2px -2px black;
+    }
+    20% {
+        transform: scale(1.1);
+        text-shadow: 14px 20px 6px black,
+                    2px 2px black,
+                    2px -2px black,
+                    -2px 2px black,
+                    -2px -2px black;
+    }
+    40% {
+        transform: scale(1);
+        text-shadow: 10px 10px 2px black,
+                    2px 2px black,
+                    2px -2px black,
+                    -2px 2px black,
+                    -2px -2px black;
+    }
+}
