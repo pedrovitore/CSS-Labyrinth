@@ -1,0 +1,144 @@
+#start {
+    top: 100px;
+    left: 340px;
+    height: 40px;
+    width: 40px;
+}
+#p1 {
+    top: 130px;
+    left: 205px;
+    height: 310px;
+    width: 310px;
+    border-radius: 50%;
+}
+#p2 {
+    top: 166px;
+    left: 241px;
+    height: 238px;
+    width: 238px;
+    border-radius: 50%;
+}
+#p3 {
+    top: 202px;
+    left: 277px;
+    height: 166px;
+    width: 166px;
+    border-radius: 50%;
+}
+#p4 {
+    top: 238px;
+    left: 313px;
+    height: 94px;
+    width: 94px;
+    border-radius: 50%;
+}
+#g1, #g1back {
+    top: 265px;
+    left: 340px;
+    height: 40px;
+    width: 40px;
+}
+#ob1 {
+    top: 154px;
+    left: 229px;
+    width: 262px;
+    height: 262px;
+    border-radius: 50%;
+}
+#ob2 {
+    top: 190px;
+    left: 265px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+#ob3 {
+    top: 226px;
+    left: 301px;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+}
+#gate1 {
+    top: 145px;
+    left: 335px;
+    height: 28px;
+    width: 50px;
+    transform-origin: 25px 140px;
+    animation: rotacao 10s infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+#gate2 {
+    top: 181px;
+    left: 335px;
+    height: 28px;
+    width: 50px;
+    transform-origin: 25px 104px;
+    animation: rotacao 10s infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+#gate3 {
+    top: 217px;
+    left: 335px;
+    height: 28px;
+    width: 50px;
+    transform-origin: 25px 68px;
+    animation: rotacao 3s infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+@keyframes rotacao {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.path2 {
+    position: absolute;
+    top: 240px;
+    left: 300px;
+    background-color: #FAA;
+    width: 20px;
+    height: 90px;
+    animation: mov-obs1 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.round-blue {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 200px;
+    height: 200px;
+    transform-origin: center;
+    border-radius: 50%;
+    background-color: #22F;
+}
+.round-path {
+    position: absolute;
+    top: 210px;
+    left: 160px;
+    width: 180px;
+    height: 180px;
+    transform-origin: center;
+    border-radius: 50%;
+    background-color: #FAA;
+}
+.round-opening {
+    position: absolute;
+    top: 200px;
+    left: 245px;
+    width: 20px;
+    height: 20px;
+    transform-origin: 5px 100px;
+    background-color: #FAA;
+    animation: rotacao 9s infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}

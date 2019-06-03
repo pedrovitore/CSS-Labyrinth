@@ -1,0 +1,80 @@
+.container {
+    margin: 100px auto 100px auto;
+    position: relative;
+    background-color: #DEF;
+    width: 720px;
+    height: 540px;
+    overflow: hidden;
+}
+.path {
+    position: absolute;
+    background-color: #FAA;
+    /* Definir tamanho e espaçamento dentro do css do map usando ID do objeto */
+}
+.start {
+    position: absolute;
+    background-color: #AFA;
+    z-index: 999;
+}
+.obstacle {
+    position: absolute;
+    background-color: #22F;
+    /* Definir tamanho e espaçamento dentro do css do map usando ID do objeto */
+}
+.level-lock {
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 720px;
+    height: 540px;
+    z-index: 998;
+}
+.game-win {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #66F;
+    z-index: 1000;
+}
+.next-level {
+    height: 240px;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50% - 120px);
+}
+.game-win p {
+    font-size: 108px;
+    color: #FFF;
+    text-align: center;
+    cursor: default;
+}
+.goal {
+    position: absolute;
+    background-color: #AFA;
+    opacity: 0;
+    /* Definir tamanho e espaçamento dentro do css do map */
+}
+.goal-background {
+    position: absolute;
+    background-image: url(../images/goal.png);
+    background-size: auto auto;
+    background-repeat: repeat;
+}
+.path:hover ~ .level-lock,
+.goal:hover ~ .level-lock,
+.start:hover ~ .level-lock {
+    display: none;
+}
+.obstacle:hover ~ .level-lock {
+    display: block;
+}
+.goal:checked ~ .game-win {
+    display: block;
+}
+input {
+    margin: 0;
+}
