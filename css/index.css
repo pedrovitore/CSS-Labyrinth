@@ -1,3 +1,42 @@
+.labyrinth {
+    position: absolute;
+    width: 600px;
+    top: 260px;
+    left: 60px;
+}
+.labyrinth .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 1em;
+    color: transparent;
+    font-family: "Chango", sans-serif;
+    font-size: 72px;
+    background-image: linear-gradient(to top, #F09, #F99);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    z-index: 11;
+}
+.labyrinth .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 1em;
+    color: transparent;
+    font-family: "Chango", sans-serif;
+    font-size: 72px;
+    text-align: center;
+    text-shadow: 10px 10px 2px black,
+                2px 2px black,
+                2px -2px black,
+                -2px 2px black,
+                -2px -2px black;
+    z-index: 10;
+}
 .titleCSS {
     position: absolute;
     font-family: "Teko", sans-serif;
@@ -19,18 +58,18 @@
                 -2px -2px black;
 }
 #titleC {
-    color: #5F5;
+    color: #02ADEA;
     animation: letter-effect 3s infinite;
     animation-direction: normal;
 }
 #titleS1 {
-    color: #FF5;
+    color: #2BB671;
     animation: letter-effect 3s infinite;
     animation-direction: normal;
     animation-delay: 0.3s;
 }
 #titleS2 {
-    color: #55F;
+    color: #278D8F;
     animation: letter-effect 3s infinite;
     animation-direction: normal;
     animation-delay: 0.6s;
