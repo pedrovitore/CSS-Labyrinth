@@ -1,24 +1,25 @@
 .container {
     margin: 100px auto 100px auto;
     position: relative;
-    background-color: #DEF;
+    background-color: #DDEAFF;
     width: 720px;
     height: 540px;
     overflow: hidden;
 }
 .path {
     position: absolute;
-    background-color: #FAA;
+    background-color: #FFAAAA;
     /* Definir tamanho e espaçamento dentro do css do map usando ID do objeto */
 }
 .start {
     position: absolute;
-    background-color: #AFA;
+    background-color: #AAFF63;
     z-index: 999;
+    /* Definir tamanho e espaçamento dentro do css do map usando ID do objeto */
 }
 .obstacle {
     position: absolute;
-    background-color: #22F;
+    background-color: #0063FF;
     /* Definir tamanho e espaçamento dentro do css do map usando ID do objeto */
 }
 .level-lock {
