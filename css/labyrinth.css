@@ -1,24 +1,25 @@
 .container {
     margin: 100px auto 100px auto;
     position: relative;
-    background-color: #DEF;
+    background-color: #DDEAFF;
     width: 720px;
     height: 540px;
     overflow: hidden;
 }
 .path {
     position: absolute;
-    background-color: #FAA;
+    background-color: #FFAAAC;
     /* Definir tamanho e espaçamento dentro do css do map usando ID do objeto */
 }
 .start {
     position: absolute;
-    background-color: #AFA;
+    background-color: #AAFF63;
     z-index: 999;
+    /* Definir tamanho e espaçamento dentro do css do map usando ID do objeto */
 }
 .obstacle {
     position: absolute;
-    background-color: #22F;
+    background-color: #0063FF;
     /* Definir tamanho e espaçamento dentro do css do map usando ID do objeto */
 }
 .level-lock {
@@ -28,6 +29,32 @@
     width: 720px;
     height: 540px;
     z-index: 998;
+}
+.cabecalho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.cabecalho span {
+    position: relative;
+    display: block;
+    margin: 0 auto 0 auto;
+    color: #FFFFFF;
+    font-family: "Teko", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 3px;
+}
+.dica {
+    position: absolute;
+    color: #000000;
+    font-family: "Teko", sans-serif;
+    font-size: 14px;
+    text-align: center;
 }
 .game-win {
     position: absolute;
