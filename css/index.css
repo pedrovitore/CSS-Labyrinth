@@ -3,6 +3,10 @@
     width: 600px;
     top: 260px;
     left: 60px;
+    animation: labyrinth-enter 0.6s;
+    animation-timing-function: ease-in;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
 }
 .labyrinth .gradient {
     position: absolute;
@@ -13,7 +17,7 @@
     color: transparent;
     font-family: "Chango", sans-serif;
     font-size: 72px;
-    background-image: linear-gradient(to top, #F09, #F99);
+    background-image: linear-gradient(to top, #FF0063, #FFAAAC);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -57,19 +61,54 @@
                 -2px 2px black,
                 -2px -2px black;
 }
+.game-start {
+    position: absolute;
+    display: block;
+    font-family: "Chango", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    background-color: #0063FF;
+    box-shadow: 1px 1px #11117F,
+        2px 2px #11117F,
+        3px 3px #11117F;
+    color: #EEEEEE;
+    width: 200px;
+    line-height: 40px;
+    border-radius: 5px;
+    top: 406px;
+    left: 260px;
+    text-decoration: none;
+    animation: aparece 1s;
+    animation-delay: 2.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+.game-start:hover {
+    background-color: #63AAFF;
+    color: #FFFFFF;
+    box-shadow: 1px 1px #0063FF,
+        2px 2px #0063FF,
+        3px 3px #0063FF;
+}
+.game-start:active {
+    background-color: #63AAFF;
+    color: #FFFFFF;
+    box-shadow: 0px 0px white;
+    transform: translate(3px,3px);
+}
 #titleC {
-    color: #02ADEA;
+    color: #AAFF63;
     animation: letter-effect 3s infinite;
     animation-direction: normal;
 }
 #titleS1 {
-    color: #2BB671;
+    color: #63AAFF;
     animation: letter-effect 3s infinite;
     animation-direction: normal;
     animation-delay: 0.3s;
 }
 #titleS2 {
-    color: #278D8F;
+    color: #FFFFFF;
     animation: letter-effect 3s infinite;
     animation-direction: normal;
     animation-delay: 0.6s;
@@ -99,5 +138,23 @@
                     2px -2px black,
                     -2px 2px black,
                     -2px -2px black;
+    }
+}
+@keyframes labyrinth-enter {
+    0% {
+        top: -400px;
+        transform: scale(5);
+    }
+    100% {
+        top: 260px;
+        transform: scale(1);
+    }
+}
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
