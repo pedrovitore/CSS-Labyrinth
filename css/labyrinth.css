@@ -1,5 +1,40 @@
+p, a, span {
+    cursor: default;
+    user-select: none;
+}
+
+/* Button Style */
+.button {
+    display: block;
+    font-family: "Chango", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    background-color: #0063FF;
+    box-shadow: 1px 1px #11117F,
+        2px 2px #11117F,
+        3px 3px #11117F;
+    color: #EEEEEE;
+    width: 200px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #63AAFF;
+    color: #FFFFFF;
+    box-shadow: 1px 1px #0063FF,
+        2px 2px #0063FF,
+        3px 3px #0063FF;
+}
+.button:active {
+    background-color: #63AAFF;
+    color: #FFFFFF;
+    box-shadow: 0px 0px white;
+    transform: translate(3px,3px);
+}
+
 .container {
-    margin: 100px auto 100px auto;
+    margin: 0 auto 0 auto;
     position: relative;
     background-color: #DDEAFF;
     width: 720px;
@@ -58,26 +93,20 @@
 }
 .game-win {
     position: absolute;
-    display: none;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #66F;
-    z-index: 1000;
+    background-color: #DDEAFF;
+    opacity: 0;
+    z-index: -1000;
 }
 .next-level {
-    height: 240px;
+    height: auto;
     width: 480px;
+    margin-top: 390px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: calc(50% - 120px);
-}
-.game-win p {
-    font-size: 108px;
-    color: #FFF;
-    text-align: center;
-    cursor: default;
 }
 .goal {
     position: absolute;
@@ -100,8 +129,43 @@
     display: block;
 }
 .goal:checked ~ .game-win {
-    display: block;
+    /* display: block; */
+    z-index: 1000;
+    transition: opacity 1s;
+    opacity: 1;
 }
 input {
     margin: 0;
+}
+
+.you-win {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+}
+.you-win span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    font-family: "Chango", sans-serif;
+    font-size: 72px;
+    text-align: center;
+}
+.you-win .gradient {
+    background-image: linear-gradient(to top, #FF0063, #FFAAAC);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    z-index: 11;
+}
+.you-win .shadow {
+    text-align: center;
+    text-shadow: 10px 10px 2px black,
+                2px 2px black,
+                2px -2px black,
+                -2px 2px black,
+                -2px -2px black;
+    z-index: 10;
 }
